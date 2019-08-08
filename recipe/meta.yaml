@@ -1,7 +1,7 @@
 {% set build = 0 %}
 {% set name = "gpaw" %}
-{% set version = "19.8.0" %}
-{% set sha256 = "232bf712ef4d07def174b1ab0e38f30058f3595a4d488d42cf340b90beffdcc5" %}
+{% set version = "19.8.1" %}
+{% set sha256 = "79dee367d695d68409c4d69edcbad5c8679137d6715da403f6c2500cb2178c2a" %}
 {% set build_string = "py{}_{}_{}".format(environ.get('CONDA_PY', ''), mpi, build) %}
 
 package:
