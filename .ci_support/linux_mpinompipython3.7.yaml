@@ -8,6 +8,8 @@ channel_targets:
 - conda-forge main
 docker_image:
 - condaforge/linux-anvil-comp7
+fftw:
+- '3'
 libblas:
 - 3.8 *netlib
 libcblas:
@@ -17,6 +19,8 @@ mpi:
 numpy:
 - '1.14'
 pin_run_as_build:
+  fftw:
+    max_pin: x
   python:
     min_pin: x.x
     max_pin: x.x

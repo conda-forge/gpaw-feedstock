@@ -18,12 +18,20 @@ jobs:
         CONFIG: linux_mpinompipython3.7
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_mpinompipython3.8:
+        CONFIG: linux_mpinompipython3.8
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
       linux_mpiopenmpipython3.6:
         CONFIG: linux_mpiopenmpipython3.6
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
       linux_mpiopenmpipython3.7:
         CONFIG: linux_mpiopenmpipython3.7
+        UPLOAD_PACKAGES: True
+        DOCKER_IMAGE: condaforge/linux-anvil-comp7
+      linux_mpiopenmpipython3.8:
+        CONFIG: linux_mpiopenmpipython3.8
         UPLOAD_PACKAGES: True
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
   steps:
@@ -37,7 +45,8 @@ jobs:
 
   - script: |
         export CI=azure
-        .azure-pipelines/run_docker_build.sh
+        export GIT_BRANCH=$BUILD_SOURCEBRANCHNAME
+        .scripts/run_docker_build.sh
     displayName: Run docker build
     env:
       BINSTAR_TOKEN: $(BINSTAR_TOKEN)
