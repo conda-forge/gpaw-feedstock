@@ -12,12 +12,10 @@ fftw:
 - '3'
 libblas:
 - 3.8 *netlib
-libcblas:
-- 3.8 *netlib
 mpi:
 - openmpi
 numpy:
-- '1.14'
+- '1.18'
 pin_run_as_build:
   fftw:
     max_pin: x
@@ -25,4 +23,7 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.8.* *_cpython
+- 3.6.* *_73_pypy
+zip_keys:
+- - numpy
+  - python
