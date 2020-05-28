@@ -1,6 +1,5 @@
 mpi:
     - openmpi
-    - nompi
 
 pin_run_as_build:
   openmpi:
