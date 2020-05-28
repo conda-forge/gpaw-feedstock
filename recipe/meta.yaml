@@ -30,7 +30,7 @@ requirements:
     - {{ mpi }}  # [mpi != 'nompi']
     - python
     - pip
-    - libxc
+    - libxc =4.3.4
     - libblas
     - libcblas
     - scalapack
@@ -40,7 +40,7 @@ requirements:
   run:
     - {{ mpi }}  # [mpi != 'nompi']
     - python
-    - libxc
+    - libxc =4.3.4
     - libblas
     - libcblas
     - scalapack
