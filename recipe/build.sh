@@ -6,7 +6,7 @@ mpicompiler = 'mpicc'  # use None if you don't want to build a gpaw-python
 mpilinker = 'mpicc'
 scalapack = True
 fftw = True
-libraries += ['scalapack', 'fftw3']
+libraries += ['scalapack', 'fftw3', 'blas']
               #'scalapack-openmpi',
               #'blacsCinit-openmpi',
               #'blacs-openmpi']
