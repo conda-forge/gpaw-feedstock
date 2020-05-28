@@ -1,6 +1,6 @@
 #!/bin/bash
 # customize.py example found at: https://gitlab.com/gpaw/gpaw/blob/master/customize.py
-cat <<EOF>siteconfig.py.py
+cat <<EOF>siteconfig.py
 compiler = '${CC}'
 mpicompiler = 'mpicc'  # use None if you don't want to build a gpaw-python
 mpilinker = 'mpicc'
