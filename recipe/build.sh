@@ -1,3 +1,8 @@
+#!/bin/bash
+export OMPI_MCA_plm=isolated
+export OMPI_MCA_rmaps_base_oversubscribe=yes
+export OMPI_MCA_btl_vader_single_copy_mechanism=none
+
 # customize.py example found at: https://gitlab.com/gpaw/gpaw/blob/master/customize.py
 cat <<EOF>customize.py
 compiler = '${CC}'
@@ -19,7 +24,7 @@ if 'xc' not in libraries:
 EOF
 
 python -m pip install . --no-deps -vv
-gpaw install-data --no-register $PREFIX/share
+# gpaw install-data --no-register $PREFIX/share
 
 mkdir -p "$PREFIX/etc/conda/activate.d"
 mkdir -p "$PREFIX/etc/conda/deactivate.d"

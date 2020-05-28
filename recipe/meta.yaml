@@ -1,7 +1,7 @@
 {% set build = 0 %}
 {% set name = "gpaw" %}
-{% set version = "19.8.1" %}
-{% set sha256 = "79dee367d695d68409c4d69edcbad5c8679137d6715da403f6c2500cb2178c2a" %}
+{% set version = "20.1.0" %}
+{% set sha256 = "c84307eb9943852d78d966c0c8856fcefdefa68621139906909908fb641b8421" %}
 {% set build_string = "py{}_{}_{}".format(environ.get('CONDA_PY', ''), mpi, build) %}
 
 package:
@@ -30,7 +30,7 @@ requirements:
     - {{ mpi }}  # [mpi != 'nompi']
     - python
     - pip
-    - libxc
+    - libxc <5.0
     - libblas
     - libcblas
     - scalapack
@@ -40,7 +40,7 @@ requirements:
   run:
     - {{ mpi }}  # [mpi != 'nompi']
     - python
-    - libxc
+    - libxc <5.0
     - libblas
     - libcblas
     - scalapack
@@ -48,15 +48,16 @@ requirements:
     - {{ pin_compatible('numpy') }}
     - scipy
     - ase
+    - gpaw-data
 
 test:
   commands:
     - gpaw test -j 1 --reverse --from generic/mixer.py                          # [mpi == 'nompi']
-    - test -x $PREFIX/bin/gpaw-python                                           # [mpi != 'nompi']
+    - test -x $PREFIX/bin/gpaw                                                  # [mpi != 'nompi']
     - export OMPI_MCA_plm=isolated                                              # [mpi == 'openmpi']
     - export OMPI_MCA_btl_vader_single_copy_mechanism=none                      # [mpi == 'openmpi']
     - export OMPI_MCA_rmaps_base_oversubscribe=yes                              # [mpi == 'openmpi']
-    - mpiexec -np 1 gpaw-python -m gpaw test --reverse --from generic/mixer.py  # [mpi != 'nompi']
+    - mpiexec -np 1 python -m gpaw test --reverse --from generic/mixer.py       # [mpi != 'nompi']
 
 about:
   home: https://wiki.fysik.dtu.dk/gpaw
@@ -75,3 +76,4 @@ about:
 extra:
   recipe-maintainers:
     - bjodah
+    - jan-janssen
