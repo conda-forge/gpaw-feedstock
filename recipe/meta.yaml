@@ -1,4 +1,4 @@
-{% set build = 0 %}
+{% set build = 1 %}
 {% set name = "gpaw" %}
 {% set version = "19.8.1" %}
 {% set sha256 = "79dee367d695d68409c4d69edcbad5c8679137d6715da403f6c2500cb2178c2a" %}
