@@ -32,7 +32,6 @@ requirements:
     - pip
     - libxc <5.0
     - libblas
-    - libcblas
     - scalapack
     - fftw
     - numpy
@@ -42,7 +41,6 @@ requirements:
     - python
     - libxc <5.0
     - libblas
-    - libcblas
     - scalapack
     - fftw
     - {{ pin_compatible('numpy') }}
