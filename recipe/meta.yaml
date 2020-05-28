@@ -57,7 +57,7 @@ test:
     - export OMPI_MCA_plm=isolated                                              # [mpi == 'openmpi']
     - export OMPI_MCA_btl_vader_single_copy_mechanism=none                      # [mpi == 'openmpi']
     - export OMPI_MCA_rmaps_base_oversubscribe=yes                              # [mpi == 'openmpi']
-    - mpiexec -np 1 python -m gpaw test --reverse --from generic/mixer.py  # [mpi != 'nompi']
+    - mpiexec -np 1 python -m gpaw test --reverse --from generic/mixer.py       # [mpi != 'nompi']
 
 about:
   home: https://wiki.fysik.dtu.dk/gpaw
