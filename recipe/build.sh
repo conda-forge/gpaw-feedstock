@@ -1,16 +1,12 @@
 #!/bin/bash
-export OMPI_MCA_plm=isolated
-export OMPI_MCA_rmaps_base_oversubscribe=yes
-export OMPI_MCA_btl_vader_single_copy_mechanism=none
-
 # customize.py example found at: https://gitlab.com/gpaw/gpaw/blob/master/customize.py
-cat <<EOF>customize.py
+cat <<EOF>siteconfig.py
 compiler = '${CC}'
 mpicompiler = 'mpicc'  # use None if you don't want to build a gpaw-python
 mpilinker = 'mpicc'
 scalapack = True
 fftw = True
-libraries += ['scalapack', 'fftw3']
+libraries += ['scalapack', 'fftw3', 'blas']
               #'scalapack-openmpi',
               #'blacsCinit-openmpi',
               #'blacs-openmpi']

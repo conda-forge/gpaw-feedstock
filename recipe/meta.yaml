@@ -1,4 +1,4 @@
-{% set build = 0 %}
+{% set build = 1 %}
 {% set name = "gpaw" %}
 {% set version = "20.1.0" %}
 {% set sha256 = "c84307eb9943852d78d966c0c8856fcefdefa68621139906909908fb641b8421" %}
@@ -32,7 +32,6 @@ requirements:
     - pip
     - libxc <5.0
     - libblas
-    - libcblas
     - scalapack
     - fftw
     - numpy
@@ -42,7 +41,6 @@ requirements:
     - python
     - libxc <5.0
     - libblas
-    - libcblas
     - scalapack
     - fftw
     - {{ pin_compatible('numpy') }}
