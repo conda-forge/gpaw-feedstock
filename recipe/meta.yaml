@@ -39,8 +39,8 @@ requirements:
   run:
     - {{ mpi }}  # [mpi != 'nompi']
     - python
+    - pip
     - libxc <5.0
-    - libblas
     - scalapack
     - fftw
     - {{ pin_compatible('numpy') }}
@@ -50,6 +50,7 @@ requirements:
 
 test:
   commands:
+    - python -m pip check
     - gpaw test -j 1 --reverse --from generic/mixer.py                          # [mpi == 'nompi']
     - test -x $PREFIX/bin/gpaw                                                  # [mpi != 'nompi']
     - export OMPI_MCA_plm=isolated                                              # [mpi == 'openmpi']
