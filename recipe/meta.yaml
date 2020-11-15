@@ -51,12 +51,12 @@ requirements:
 test:
   commands:
     - python -m pip check
-    - pytest gpaw/test/generic/mixer.py                                         # [mpi == 'nompi']
+    - pytest ${SP_DIR}/gpaw/test/generic/mixer.py                               # [mpi == 'nompi']
     - test -x $PREFIX/bin/gpaw                                                  # [mpi != 'nompi']
     - export OMPI_MCA_plm=isolated                                              # [mpi == 'openmpi']
     - export OMPI_MCA_btl_vader_single_copy_mechanism=none                      # [mpi == 'openmpi']
     - export OMPI_MCA_rmaps_base_oversubscribe=yes                              # [mpi == 'openmpi']
-    - mpiexec -np 1 pytest gpaw/test/generic/mixer.py                           # [mpi != 'nompi']
+    - mpiexec -np 1 pytest ${SP_DIR}/gpaw/test/generic/mixer.py                 # [mpi != 'nompi']
   requires:
     - pytest
 
