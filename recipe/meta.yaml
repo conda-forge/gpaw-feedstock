@@ -49,14 +49,16 @@ requirements:
     - gpaw-data
 
 test:
+  files:
+    - test_generic.py
   commands:
     - python -m pip check
-    - pytest ${SRC_DIR}/gpaw/test/generic/test_mixer.py                         # [mpi == 'nompi']
+    - pytest test_generic.py                                                    # [mpi == 'nompi']
     - test -x $PREFIX/bin/gpaw                                                  # [mpi != 'nompi']
     - export OMPI_MCA_plm=isolated                                              # [mpi == 'openmpi']
     - export OMPI_MCA_btl_vader_single_copy_mechanism=none                      # [mpi == 'openmpi']
     - export OMPI_MCA_rmaps_base_oversubscribe=yes                              # [mpi == 'openmpi']
-    - mpiexec -np 1 pytest ${SRC_DIR}/gpaw/test/generic/test_mixer.py           # [mpi != 'nompi']
+    - mpiexec -np 1 pytest test_generic.py                                      # [mpi != 'nompi']
   requires:
     - pytest
 
