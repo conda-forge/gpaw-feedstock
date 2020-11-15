@@ -50,9 +50,13 @@ requirements:
 
 test:
   imports:
-    - gpaw
+    - gpaw  # [mpi == 'nompi']
   commands:
     - python -m pip check
+    - export OMPI_MCA_plm=isolated                          # [mpi == 'openmpi']
+    - export OMPI_MCA_btl_vader_single_copy_mechanism=none  # [mpi == 'openmpi']
+    - export OMPI_MCA_rmaps_base_oversubscribe=yes          # [mpi == 'openmpi']
+    - python -c "import gpaw"                               # [mpi == 'openmpi']
 
 about:
   home: https://wiki.fysik.dtu.dk/gpaw
