@@ -49,8 +49,6 @@ requirements:
     - gpaw-data
 
 test:
-  files:
-    - test_generic.py
   commands:
     - python -m pip check
     - gpaw test -j 1 --reverse --from generic/test_mixer.py                     # [mpi == 'nompi']
