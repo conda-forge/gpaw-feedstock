@@ -17,7 +17,7 @@ libblas:
 mpi:
 - openmpi
 numpy:
-- '1.16'
+- '1.17'
 pin_run_as_build:
   fftw:
     max_pin: x
