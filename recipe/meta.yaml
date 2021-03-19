@@ -57,6 +57,7 @@ test:
     - export OMPI_MCA_btl_vader_single_copy_mechanism=none  # [mpi == 'openmpi']
     - export OMPI_MCA_rmaps_base_oversubscribe=yes          # [mpi == 'openmpi']
     - python -c "import gpaw"                               # [mpi == 'openmpi']
+    - gpaw test                                             # [mpi != 'mpich']
 
 about:
   home: https://wiki.fysik.dtu.dk/gpaw
