@@ -1,7 +1,7 @@
-{% set build = 1 %}
+{% set build = 0 %}
 {% set name = "gpaw" %}
-{% set version = "21.1.0" %}
-{% set sha256 = "96843b68e04bd1c12606036c9f99b0ddfa5e6ee08ce46835e6bb347a6bd560a3" %}
+{% set version = "21.6.0" %}
+{% set sha256 = "5bb805bf514a7b04e3fdfce6f7864d150032badc5cd2805c57513af982d7a9cc" %}
 {% set build_string = "py{}_{}_{}".format(environ.get('CONDA_PY', ''), mpi, build) %}
 
 package:
@@ -11,8 +11,8 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
-  patches:
-    - 001_config-py.patch
+  # patches:
+  #   - 001_config-py.patch
     # patch 001 is needed because gpaw's config.py assumes that libpython is a dynamic library,
     # whereas the python version used by conda-forge provides a static library. Hopefully gpaw-devs
     # will accept this as a future change upstream.
