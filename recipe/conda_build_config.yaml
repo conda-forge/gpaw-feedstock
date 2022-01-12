@@ -1,8 +1,6 @@
 mpi:
-    - openmpi
+  - openmpi
 
 pin_run_as_build:
-  openmpi:
-    max_pin: x.x
   scalapack:
     max_pin: x.x
