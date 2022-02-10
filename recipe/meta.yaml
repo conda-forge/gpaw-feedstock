@@ -1,7 +1,16 @@
-{% set build = 2 %}
+{% set build = 0 %}
 {% set name = "gpaw" %}
-{% set version = "21.6.0" %}
-{% set build_string = "py{}_{}_{}".format(environ.get('CONDA_PY', ''), mpi, build) %}
+{% set version = "22.1.0" %}
+
+{% if mpi != 'nompi' %}
+  {% set mpi_prefix = "mpi_" + mpi %}
+{% else %}
+  {% set mpi_prefix = "nompi" %}
+{% endif %}
+{% set build_string = "py{}_{}_omp_{}".format(environ.get('CONDA_PY', ''), mpi_prefix, build) %}
+
+
+
 
 package:
   name: {{ name|lower }}
@@ -9,7 +18,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5bb805bf514a7b04e3fdfce6f7864d150032badc5cd2805c57513af982d7a9cc
+  sha256: 2d2509e9e4b23205f5576ddfd1b0e9d9ac8cea1cf80ae1216af29513bd3cc42a
 
 build:
   number: {{ build }}
@@ -19,29 +28,30 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ mpi }}-mpicc  # [mpi != 'nompi']
+    
   host:
     - {{ mpi }}  # [mpi != 'nompi']
     - python
-    - pip
-    - libxc <5.0
+    - elpa * {{ mpi_prefix }}_*
+    - libxc >=5.2
     - libblas
-    - scalapack
-    - fftw
-    - numpy
-    - ase
-  run:
-    - {{ mpi }}  # [mpi != 'nompi']
-    - python
+    - scalapack  # [mpi != 'nompi']
+    - fftw * {{ mpi_prefix }}_*
+    - numpy >=1.22
     - pip
-    - libxc <5.0
-    - scalapack
-    - fftw
+    - ase
+    #- libvdwxc
+  run:
+    - python
     - {{ pin_compatible('numpy') }}
     - scipy
     - ase
     - gpaw-data
 
 test:
+  requires:
+    - pip
   imports:
     - gpaw  # [mpi == 'nompi']
   commands:
@@ -54,7 +64,7 @@ test:
 
 about:
   home: https://wiki.fysik.dtu.dk/gpaw
-  license: GPL-3.0
+  license: GPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE
   summary: 'GPAW: DFT and beyond within the projector-augmented wave method'
@@ -70,3 +80,4 @@ extra:
   recipe-maintainers:
     - bjodah
     - jan-janssen
+    - gdonval
