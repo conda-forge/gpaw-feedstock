@@ -37,108 +37,108 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_mpimpichpython3.10.____cpython</td>
+              <td>linux_64_mpimpichnumpy1.18python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6528&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpaw-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpimpichpython3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpaw-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpimpichnumpy1.18python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpimpichpython3.7.____73_pypy</td>
+              <td>linux_64_mpimpichnumpy1.18python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6528&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpaw-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpimpichpython3.7.____73_pypy" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpaw-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpimpichnumpy1.18python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpimpichpython3.7.____cpython</td>
+              <td>linux_64_mpimpichnumpy1.19python3.7.____73_pypy</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6528&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpaw-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpimpichpython3.7.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpaw-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpimpichnumpy1.19python3.7.____73_pypy" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpimpichpython3.8.____cpython</td>
+              <td>linux_64_mpimpichnumpy1.19python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6528&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpaw-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpimpichpython3.8.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpaw-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpimpichnumpy1.19python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpimpichpython3.9.____cpython</td>
+              <td>linux_64_mpimpichnumpy1.21python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6528&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpaw-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpimpichpython3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpaw-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpimpichnumpy1.21python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpinompipython3.10.____cpython</td>
+              <td>linux_64_mpinompinumpy1.18python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6528&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpaw-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpinompipython3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpaw-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpinompinumpy1.18python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpinompipython3.7.____73_pypy</td>
+              <td>linux_64_mpinompinumpy1.18python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6528&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpaw-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpinompipython3.7.____73_pypy" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpaw-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpinompinumpy1.18python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpinompipython3.7.____cpython</td>
+              <td>linux_64_mpinompinumpy1.19python3.7.____73_pypy</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6528&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpaw-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpinompipython3.7.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpaw-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpinompinumpy1.19python3.7.____73_pypy" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpinompipython3.8.____cpython</td>
+              <td>linux_64_mpinompinumpy1.19python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6528&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpaw-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpinompipython3.8.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpaw-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpinompinumpy1.19python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpinompipython3.9.____cpython</td>
+              <td>linux_64_mpinompinumpy1.21python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6528&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpaw-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpinompipython3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpaw-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpinompinumpy1.21python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpiopenmpipython3.10.____cpython</td>
+              <td>linux_64_mpiopenmpinumpy1.18python3.7.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6528&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpaw-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpiopenmpipython3.10.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpaw-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpiopenmpinumpy1.18python3.7.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpiopenmpipython3.7.____73_pypy</td>
+              <td>linux_64_mpiopenmpinumpy1.18python3.8.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6528&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpaw-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpiopenmpipython3.7.____73_pypy" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpaw-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpiopenmpinumpy1.18python3.8.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpiopenmpipython3.7.____cpython</td>
+              <td>linux_64_mpiopenmpinumpy1.19python3.7.____73_pypy</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6528&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpaw-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpiopenmpipython3.7.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpaw-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpiopenmpinumpy1.19python3.7.____73_pypy" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpiopenmpipython3.8.____cpython</td>
+              <td>linux_64_mpiopenmpinumpy1.19python3.9.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6528&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpaw-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpiopenmpipython3.8.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpaw-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpiopenmpinumpy1.19python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_mpiopenmpipython3.9.____cpython</td>
+              <td>linux_64_mpiopenmpinumpy1.21python3.10.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=6528&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpaw-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpiopenmpipython3.9.____cpython" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/gpaw-feedstock?branchName=master&jobName=linux&configuration=linux_64_mpiopenmpinumpy1.21python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr>
