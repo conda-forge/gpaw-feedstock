@@ -38,7 +38,7 @@ requirements:
     - libblas
     - scalapack  # [mpi != 'nompi']
     - fftw * {{ mpi_prefix }}_*
-    - numpy >=1.22
+    - numpy
     - pip
     - ase
     #- libvdwxc
