@@ -38,10 +38,10 @@ requirements:
     - libblas
     - scalapack  # [mpi != 'nompi']
     - fftw * {{ mpi_prefix }}_*
-    - numpy
+    - numpy >=1.21
     - pip
     - ase
-    #- libvdwxc
+    - libvdwxc * {{ mpi_prefix }}_*
   run:
     - python
     - {{ pin_compatible('numpy') }}
