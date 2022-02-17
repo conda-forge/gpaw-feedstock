@@ -24,6 +24,8 @@ build:
   number: {{ build }}
   string: {{ build_string }}
   skip: true  # [not linux]
+  track_features:
+    - gpaw-has_lower_priority  # [mpi != "openmpi"]
 
 requirements:
   build:
@@ -38,7 +40,7 @@ requirements:
     - libblas
     - scalapack  # [mpi != 'nompi']
     - fftw * {{ mpi_prefix }}_*
-    - numpy >=1.21
+    - numpy
     - pip
     - ase
     - libvdwxc * {{ mpi_prefix }}_*
