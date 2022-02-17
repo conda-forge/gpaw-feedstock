@@ -39,6 +39,7 @@ if xc:
     libraries += ['xc']
     
 if vdwxc:
+    libvdwxc = True
     libraries += ['vdwxc']
 
 extra_compile_args += ['-fopenmp', '-fopenmp-simd']
