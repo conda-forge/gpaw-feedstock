@@ -9,7 +9,7 @@ fftw = True
 elpa = True
 blas = True
 xc = True
-vdwxc = True
+vdwxc = has_mpi
 
 if has_mpi:
     mpicompiler = 'mpicc'
