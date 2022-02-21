@@ -9,7 +9,7 @@ fftw = True
 elpa = True
 blas = True
 xc = True
-vdwxc = False
+vdwxc = has_mpi
 
 if has_mpi:
     mpicompiler = 'mpicc'
@@ -39,6 +39,7 @@ if xc:
     libraries += ['xc']
     
 if vdwxc:
+    libvdwxc = True
     libraries += ['vdwxc']
 
 extra_compile_args += ['-fopenmp', '-fopenmp-simd']
