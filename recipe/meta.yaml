@@ -1,4 +1,4 @@
-{% set build = 1 %}
+{% set build = 2 %}
 {% set name = "gpaw" %}
 {% set version = "22.1.0" %}
 
@@ -30,6 +30,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
     - {{ mpi }}-mpicc  # [mpi != 'nompi']
     
   host:
