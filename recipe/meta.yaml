@@ -50,6 +50,7 @@ requirements:
     - scipy
     - ase
     - gpaw-data
+    - pyyaml
 
 test:
   requires:
