@@ -17,11 +17,11 @@ docker_image:
 libblas:
 - 3.9 *netlib
 mpi:
-- nompi
+- openmpi
 mpich:
 - '4'
 numpy:
-- '1.19'
+- '1.20'
 openmpi:
 - '4'
 pin_run_as_build:
