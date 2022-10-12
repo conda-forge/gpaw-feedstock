@@ -31,7 +31,7 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - {{ mpi }}-mpicc  # [mpi != 'nompi']
+    - {{ mpi }}  # [mpi == 'openmpi' and build_platform != target_platform]
   host:
     - {{ mpi }}  # [mpi != 'nompi']
     - python

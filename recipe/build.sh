@@ -46,6 +46,16 @@ extra_compile_args += ['-fopenmp', '-fopenmp-simd']
 extra_link_args += ['-fopenmp', '-fopenmp-simd']
 EOF
 
+# Necessary for OpenMPI cross-compilation (aarch64 at least)
+if [[ "$CONDA_BUILD_CROSS_COMPILATION" == "1" ]]; then
+  # This is only used by open-mpi's mpicc
+  # ignored in other cases
+  export OMPI_CC=$CC
+  export OMPI_CXX=$CXX
+  export OMPI_FC=$FC
+  export OPAL_PREFIX=$PREFIX
+fi
+
 unset CC
 python setup.py build_ext
 python -m pip install . --no-deps
