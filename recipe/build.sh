@@ -42,8 +42,8 @@ if vdwxc:
     libvdwxc = True
     libraries += ['vdwxc']
 
-extra_compile_args += ['-fopenmp', '-fopenmp-simd']
-extra_link_args += ['-fopenmp', '-fopenmp-simd']
+extra_compile_args += ['-fopenmp', '-fopenmp-simd', '-flto', '-Wl,-flto', '-fuse-linker-plugin']
+extra_link_args += ['-fopenmp', '-fopenmp-simd', '-flto', '-Wl,-flto', '-fuse-linker-plugin']
 EOF
 
 # Necessary for OpenMPI cross-compilation (aarch64 at least)
