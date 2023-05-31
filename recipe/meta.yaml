@@ -1,4 +1,4 @@
-{% set build = 3 %}
+{% set build = 4 %}
 {% set name = "gpaw" %}
 {% set version = "22.8.0" %}
 
@@ -23,7 +23,7 @@ source:
 build:
   number: {{ build }}
   string: {{ build_string }}
-  skip: true  # [not linux]
+  skip: true  # [win]
   track_features:
     - gpaw-has_lower_priority  # [mpi != "openmpi"]
 
