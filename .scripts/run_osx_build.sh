@@ -2,6 +2,7 @@
 
 # -*- mode: jinja-shell -*-
 
+export LC_CTYPE=UTF-8
 source .scripts/logging_utils.sh
 
 set -xe
