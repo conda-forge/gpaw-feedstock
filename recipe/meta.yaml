@@ -1,6 +1,6 @@
 {% set build = 0 %}
 {% set name = "gpaw" %}
-{% set version = "23.6.1" %}
+{% set version = "23.9.0" %}
 
 {% if mpi != 'nompi' %}
   {% set mpi_prefix = "mpi_" + mpi %}
@@ -18,7 +18,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ff56d323a499972c8991770a6ab0334a6dd18df36e9c94360e0aa1ddf8867dfd
+  sha256: 2787cfce954e477a485d4b2ce67926bfb708673bfb47480890d2c6b9f92d4ca7
 
 build:
   number: {{ build }}
