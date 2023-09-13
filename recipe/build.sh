@@ -1,6 +1,7 @@
 #!/bin/bash
 # customize.py example found at: https://gitlab.com/gpaw/gpaw/blob/master/customize.py
 cat <<EOF> siteconfig.py
+compiler = '${CC}'
 has_mpi = '$mpi' != 'nompi'
 
 scalapack = has_mpi
@@ -11,7 +12,7 @@ xc = True
 vdwxc = has_mpi
 
 if has_mpi:
-    mpicompiler = 'mpicc'
+    mpi = True
     mpilinker = 'mpicc'
     define_macros += [("GPAW_ASYNC", '1')]
     define_macros += [("GPAW_MPI2", '1')]
