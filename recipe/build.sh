@@ -1,7 +1,6 @@
 #!/bin/bash
 # customize.py example found at: https://gitlab.com/gpaw/gpaw/blob/master/customize.py
 cat <<EOF> siteconfig.py
-compiler = '${CC}'
 has_mpi = '$mpi' != 'nompi'
 
 scalapack = has_mpi
