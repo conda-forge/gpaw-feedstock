@@ -12,8 +12,7 @@ xc = True
 vdwxc = has_mpi
 
 if has_mpi:
-    mpicompiler = 'mpicc'
-    mpilinker = 'mpicc'
+    mpi = True
     define_macros += [("GPAW_ASYNC", '1')]
     define_macros += [("GPAW_MPI2", '1')]
 
