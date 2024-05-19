@@ -1,4 +1,4 @@
-{% set build = 0 %}
+{% set build = 1 %}
 {% set name = "gpaw" %}
 {% set version = "24.1.0" %}
 
@@ -30,6 +30,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - {{ mpi }}  # [mpi == 'openmpi' and build_platform != target_platform]
   host:
@@ -46,7 +47,6 @@ requirements:
     - libvdwxc * {{ mpi_prefix }}_*  # [mpi != 'nompi']
   run:
     - python
-    - {{ pin_compatible('numpy') }}
     - scipy
     - ase
     - gpaw-data
