@@ -11,12 +11,6 @@ jobs:
       osx_64_mpimpichnumpy1.22python3.10.____cpython:
         CONFIG: osx_64_mpimpichnumpy1.22python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
-      osx_64_mpimpichnumpy1.22python3.8.____cpython:
-        CONFIG: osx_64_mpimpichnumpy1.22python3.8.____cpython
-        UPLOAD_PACKAGES: 'True'
-      osx_64_mpimpichnumpy1.22python3.9.____73_pypy:
-        CONFIG: osx_64_mpimpichnumpy1.22python3.9.____73_pypy
-        UPLOAD_PACKAGES: 'True'
       osx_64_mpimpichnumpy1.22python3.9.____cpython:
         CONFIG: osx_64_mpimpichnumpy1.22python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -26,14 +20,11 @@ jobs:
       osx_64_mpimpichnumpy1.26python3.12.____cpython:
         CONFIG: osx_64_mpimpichnumpy1.26python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
+      osx_64_mpimpichnumpy2python3.13.____cp313:
+        CONFIG: osx_64_mpimpichnumpy2python3.13.____cp313
+        UPLOAD_PACKAGES: 'True'
       osx_64_mpinompinumpy1.22python3.10.____cpython:
         CONFIG: osx_64_mpinompinumpy1.22python3.10.____cpython
-        UPLOAD_PACKAGES: 'True'
-      osx_64_mpinompinumpy1.22python3.8.____cpython:
-        CONFIG: osx_64_mpinompinumpy1.22python3.8.____cpython
-        UPLOAD_PACKAGES: 'True'
-      osx_64_mpinompinumpy1.22python3.9.____73_pypy:
-        CONFIG: osx_64_mpinompinumpy1.22python3.9.____73_pypy
         UPLOAD_PACKAGES: 'True'
       osx_64_mpinompinumpy1.22python3.9.____cpython:
         CONFIG: osx_64_mpinompinumpy1.22python3.9.____cpython
@@ -44,14 +35,11 @@ jobs:
       osx_64_mpinompinumpy1.26python3.12.____cpython:
         CONFIG: osx_64_mpinompinumpy1.26python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
+      osx_64_mpinompinumpy2python3.13.____cp313:
+        CONFIG: osx_64_mpinompinumpy2python3.13.____cp313
+        UPLOAD_PACKAGES: 'True'
       osx_64_mpiopenmpinumpy1.22python3.10.____cpython:
         CONFIG: osx_64_mpiopenmpinumpy1.22python3.10.____cpython
-        UPLOAD_PACKAGES: 'True'
-      osx_64_mpiopenmpinumpy1.22python3.8.____cpython:
-        CONFIG: osx_64_mpiopenmpinumpy1.22python3.8.____cpython
-        UPLOAD_PACKAGES: 'True'
-      osx_64_mpiopenmpinumpy1.22python3.9.____73_pypy:
-        CONFIG: osx_64_mpiopenmpinumpy1.22python3.9.____73_pypy
         UPLOAD_PACKAGES: 'True'
       osx_64_mpiopenmpinumpy1.22python3.9.____cpython:
         CONFIG: osx_64_mpiopenmpinumpy1.22python3.9.____cpython
@@ -61,6 +49,9 @@ jobs:
         UPLOAD_PACKAGES: 'True'
       osx_64_mpiopenmpinumpy1.26python3.12.____cpython:
         CONFIG: osx_64_mpiopenmpinumpy1.26python3.12.____cpython
+        UPLOAD_PACKAGES: 'True'
+      osx_64_mpiopenmpinumpy2python3.13.____cp313:
+        CONFIG: osx_64_mpiopenmpinumpy2python3.13.____cp313
         UPLOAD_PACKAGES: 'True'
     maxParallel: 12
   timeoutInMinutes: 360
