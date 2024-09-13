@@ -43,6 +43,7 @@ requirements:
     - fftw * {{ mpi_prefix }}_*
     - numpy
     - pip
+    - setuptools
     - ase
     - libvdwxc * {{ mpi_prefix }}_*  # [mpi != 'nompi']
   run:
