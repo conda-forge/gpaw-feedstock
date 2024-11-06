@@ -1,4 +1,4 @@
-{% set build = 0 %}
+{% set build = 1 %}
 {% set name = "gpaw" %}
 {% set version = "24.6.0" %}
 
@@ -43,6 +43,7 @@ requirements:
     - fftw * {{ mpi_prefix }}_*
     - numpy
     - pip
+    - setuptools
     - ase
     - libvdwxc * {{ mpi_prefix }}_*  # [mpi != 'nompi']
   run:
