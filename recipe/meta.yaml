@@ -19,6 +19,8 @@ package:
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 93ac829bba36be74eab0d7deef5eb798613c04edbce196837208d206cf39c431
+  patches:
+    - elpa.patch
 
 build:
   number: {{ build }}
