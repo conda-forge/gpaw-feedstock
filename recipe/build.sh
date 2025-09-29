@@ -3,6 +3,7 @@
 cat <<EOF> siteconfig.py
 compiler = '${CC}'
 has_mpi = '$mpi' != 'nompi'
+library_dirs += ['${PREFIX}/lib']
 
 scalapack = has_mpi
 fftw = True
@@ -63,11 +64,3 @@ fi
 unset CC
 python setup.py build_ext
 python -m pip install . --no-deps
-
-mkdir -p "$PREFIX/etc/conda/activate.d"
-mkdir -p "$PREFIX/etc/conda/deactivate.d"
-for shext in sh csh fish 
-do
-   cp "$RECIPE_DIR/activate.${shext}" "$PREFIX/etc/conda/activate.d/gpaw-activate.${shext}"
-   cp "$RECIPE_DIR/deactivate.${shext}" "$PREFIX/etc/conda/deactivate.d/gpaw-deactivate.${shext}"
-done
