@@ -36,6 +36,7 @@ requirements:
   host:
     - {{ mpi }}  # [mpi != 'nompi']
     - python
+    - setuptools
     - elpa * {{ mpi_prefix }}_*
     - libxc >=5.2
     - libblas
