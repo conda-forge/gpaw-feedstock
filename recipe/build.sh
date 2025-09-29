@@ -46,7 +46,7 @@ extra_compile_args += ['-fopenmp', '-fopenmp-simd']
 extra_link_args += ['-fopenmp', '-fopenmp-simd']
 EOF
 
-export ELPA_API_VERSION=20250601
+ls ${PREFIX}/include
 
 # Necessary for OpenMPI cross-compilation (aarch64 at least)
 # Diabling LTO is also necessary under aarch64 at the moment:
