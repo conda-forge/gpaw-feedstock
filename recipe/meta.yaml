@@ -9,9 +9,6 @@
 {% endif %}
 {% set build_string = "py{}_{}_omp_{}".format(environ.get('CONDA_PY', ''), mpi_prefix, build) %}
 
-
-
-
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -53,7 +50,7 @@ requirements:
     - {{ pin_compatible('numpy') }}
     - scipy
     - ase
-    - gpaw-data
+    - gpaw-data >=1
     - pyyaml
 
 test:
