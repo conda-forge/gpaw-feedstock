@@ -3,6 +3,7 @@
 cat <<EOF> siteconfig.py
 compiler = '${CC}'
 has_mpi = '$mpi' != 'nompi'
+library_dirs += ['${PREFIX}/lib']
 
 scalapack = has_mpi
 fftw = True
