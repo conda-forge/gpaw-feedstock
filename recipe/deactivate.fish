@@ -1,1 +1,0 @@
-set -e GPAW_SETUP_PATH
