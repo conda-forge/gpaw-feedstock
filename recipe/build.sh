@@ -25,7 +25,6 @@ if elpa:
         libraries += ['elpa_openmp', 'elpa']
     else:
         libraries += ['elpa_onenode_openmp', 'elpa_onenode']
-    define_macros += [('ELPA_API_VERSION', '20250601')]
     include_dirs += ['${PREFIX}/include/elpa_openmp', '${PREFIX}/include/elpa']
 
 if scalapack:
@@ -46,9 +45,6 @@ if vdwxc:
 extra_compile_args += ['-fopenmp', '-fopenmp-simd']
 extra_link_args += ['-fopenmp', '-fopenmp-simd']
 EOF
-
-ls ${PREFIX}/include/elpa
-ls ${PREFIX}/include/elpa_openmp
 
 # Necessary for OpenMPI cross-compilation (aarch64 at least)
 # Diabling LTO is also necessary under aarch64 at the moment:
