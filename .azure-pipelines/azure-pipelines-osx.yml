@@ -20,6 +20,9 @@ jobs:
       osx_64_mpimpichpython3.13.____cp313:
         CONFIG: osx_64_mpimpichpython3.13.____cp313
         UPLOAD_PACKAGES: 'True'
+      osx_64_mpimpichpython3.14.____cp314:
+        CONFIG: osx_64_mpimpichpython3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
       osx_64_mpinompipython3.10.____cpython:
         CONFIG: osx_64_mpinompipython3.10.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -31,6 +34,9 @@ jobs:
         UPLOAD_PACKAGES: 'True'
       osx_64_mpinompipython3.13.____cp313:
         CONFIG: osx_64_mpinompipython3.13.____cp313
+        UPLOAD_PACKAGES: 'True'
+      osx_64_mpinompipython3.14.____cp314:
+        CONFIG: osx_64_mpinompipython3.14.____cp314
         UPLOAD_PACKAGES: 'True'
       osx_64_mpiopenmpipython3.10.____cpython:
         CONFIG: osx_64_mpiopenmpipython3.10.____cpython
@@ -44,6 +50,10 @@ jobs:
       osx_64_mpiopenmpipython3.13.____cp313:
         CONFIG: osx_64_mpiopenmpipython3.13.____cp313
         UPLOAD_PACKAGES: 'True'
+      osx_64_mpiopenmpipython3.14.____cp314:
+        CONFIG: osx_64_mpiopenmpipython3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+    maxParallel: 12
   timeoutInMinutes: 360
   variables: {}
 
