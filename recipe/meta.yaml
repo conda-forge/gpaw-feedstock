@@ -1,4 +1,4 @@
-{% set build = 2 %}
+{% set build = 3 %}
 {% set name = "gpaw" %}
 {% set version = "25.7.0" %}
 
