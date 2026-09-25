@@ -1,7 +1,7 @@
 #!/bin/bash
 # customize.py example found at: https://gitlab.com/gpaw/gpaw/blob/master/customize.py
 cat <<EOF> siteconfig.py
-compiler = '${CC}'
+compiler = '${CXX}'
 has_mpi = '$mpi' != 'nompi'
 library_dirs += ['${PREFIX}/lib']
 
