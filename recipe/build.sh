@@ -56,9 +56,9 @@ if [[ "$CONDA_BUILD_CROSS_COMPILATION" == "1" ]]; then
   export OMPI_CXX=$CXX
   export OMPI_FC=$FC
   export OPAL_PREFIX=$PREFIX
-  
-  export CFLAGS="$CFLAGS -fno-lto -Wl,-fno-lto"
-  export CPPFLAGS="$CPPFLAGS -fno-lto -Wl,-fno-lto"
+
+  export CFLAGS="$CFLAGS -fno-lto"
+  export CXXFLAGS="$CPPFLAGS -fno-lto"
 fi
 
 unset CC
