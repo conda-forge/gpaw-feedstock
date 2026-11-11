@@ -3,7 +3,6 @@
 {% set version = "26.7.0" %}
 
 {% set mpi_prefix = "mpi_" + mpi if mpi != "nompi" else "nompi" %}
-{% set build_string = "py{}_{}_omp_{}".format(environ.get('CONDA_PY', ''), mpi_prefix, build) %}
 
 package:
   name: {{ name|lower }}
@@ -15,7 +14,7 @@ source:
 
 build:
   number: {{ build }}
-  string: {{ build_string }}
+  string: py{{ environ.get('CONDA_PY', '') }}_{{ mpi_prefix }}_omp_{{ build }}
   skip: true  # [win]
   track_features:
     - gpaw-has_lower_priority  # [mpi != "openmpi"]
